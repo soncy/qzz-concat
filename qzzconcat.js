@@ -34,7 +34,7 @@ function makeUpConcat(req) {
         }), str = '';
 
         if (type === 'css'){
-            str = '@import url(' + u + ')\n';
+            str = '@import url(' + u + ');\n';
         } else {
             str = '!!document.write(\'<script src="' + u + '"></script>\')\n';
         }
